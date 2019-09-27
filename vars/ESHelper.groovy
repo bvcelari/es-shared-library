@@ -1,4 +1,4 @@
-def SendToES(Map parameters) {
+def call(Map parameters) {
     sh "echo this a test ${parameters.env}"
 }
 
