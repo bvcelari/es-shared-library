@@ -1,5 +1,5 @@
 def call(Map parameters) {
-    sh 'Sending informatino to ES:'
+    sh 'echo "Sending informatino to ES:"'
 
     sh """
     cat > message.json <<EOF
