@@ -1,4 +1,4 @@
-def call(Map parameters) {
+def call(ESDataSet parameters) {
     sh 'Sending informatino to ES:'
 
     sh """
