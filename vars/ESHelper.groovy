@@ -1,5 +1,5 @@
 def call(Map ESDataSet) {
-    sh 'echo "Sending information to ES:"'
+    sh 'echo "Sending information to ES... "'
 
     sh """
     cat > message.json <<EOF
@@ -15,9 +15,9 @@ def call(Map ESDataSet) {
     "date": "${ESDataSet.date}"
     }
     EOF
-    
-    echo "genearted message"
-    ls 
+    """
+    sh """
+    echo "   generated message..."
     cat message.json
     
     curl -u USERNAME:PASSWORD -XPUT 'localhost:9200/custom_builds/external/1?pretty' -d '@message.json'
