@@ -1,5 +1,5 @@
 def call(Map ESDataSet) {
-    sh 'echo "Sending informatino to ES:"'
+    sh 'echo "Sending information to ES:"'
 
     sh """
     cat > message.json <<EOF
