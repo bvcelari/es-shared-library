@@ -1,18 +1,18 @@
-def call(ESDataSet parameters) {
+def call(Map parameters) {
     sh 'Sending informatino to ES:'
 
     sh """
     cat > message.json <<EOF
     {
-    "enviroment": "${ESDataSet.env}",
-    "build_number": "${ESDataSet.build_number}",
-    "build_tag": "${ESDataSet.build_tag}",
-    "job_base_name": "${ESDataSet.job_base_name}",
-    "job_name": "${ESDataSet.job_name}",
-    "node_name": "${ESDataSet.node_name}",
-    "node_labels": "${ESDataSet.node_labels}",
-    "status": "${ESDataSet.status}",
-    "date": "${ESDataSet.date}"
+    "enviroment": "${Map.env}",
+    "build_number": "${Map.build_number}",
+    "build_tag": "${Map.build_tag}",
+    "job_base_name": "${Map.job_base_name}",
+    "job_name": "${Map.job_name}",
+    "node_name": "${Map.node_name}",
+    "node_labels": "${Map.node_labels}",
+    "status": "${Map.status}",
+    "date": "${Map.date}"
     }
     EOF
     
