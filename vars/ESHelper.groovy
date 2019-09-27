@@ -16,7 +16,10 @@ def call(Map ESDataSet) {
     }
     EOF
     
+    echo "genearted message"
+    ls 
     cat message.json
+    
     curl -u USERNAME:PASSWORD -XPUT 'localhost:9200/custom_builds/external/1?pretty' -d '@message.json'
     """
 
