@@ -15,7 +15,7 @@ pipeline {
   booleanParam(name: 'runB', defaultValue: true)
   booleanParam(name: 'Deploy', defaultValue: false)
   booleanParam(name: 'Stash', defaultValue: false)
-  booleanParam(name: 'test', defaultValue: true)
+  booleanParam(name: 'test', defaultValue: false)
   booleanParam(name: 'Deestroy', defaultValue: false) //paramenter to run aXe testing with in kumonium
  }
 
