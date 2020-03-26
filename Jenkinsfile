@@ -22,7 +22,7 @@ pipeline {
 stage('Build') {
    steps {
     echo "You Build Here"
-    
+    echo "you will remove me soon"
    }//steps
   }//stage
 
