@@ -22,7 +22,10 @@ pipeline {
 stage('Build') {
    steps {
     echo "You Build Here"
-    
+    sh 'echo $CHANGE_ID'
+sh "echo \$CHANGE_ID"
+sh "echo ${env.CHANGE_ID}"
+
    }//steps
   }//stage
 
