@@ -21,7 +21,7 @@ pipeline {
  stages {
 stage('Build') {
    steps {
-    echo "You Build Here Updated"
+    echo "You Build Here Updated bvcelari-patch-1 branch"
     sh 'echo $CHANGE_ID'
     sh 'echo Update the PR'
    }//steps
