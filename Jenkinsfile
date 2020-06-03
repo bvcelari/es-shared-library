@@ -21,7 +21,7 @@ pipeline {
  stages {
 stage('Build') {
    steps {
-    echo "You Build Here"
+    echo "You Build Here Updated"
     sh 'echo $CHANGE_ID'
     sh 'echo Update the PR'
    }//steps
