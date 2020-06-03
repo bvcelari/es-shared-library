@@ -21,8 +21,9 @@ pipeline {
  stages {
 stage('Build') {
    steps {
-    echo "You Build Here"
-    
+    echo "You Build Here Updated bvcelari-patch-1 branch typo Fix"
+    sh 'echo $CHANGE_ID'
+    sh 'echo Update the PR'
    }//steps
   }//stage
 
