@@ -1,1 +1,1 @@
-master
+sh 'echo "from my script"'
