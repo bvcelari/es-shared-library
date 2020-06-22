@@ -1,1 +1,1 @@
-sh 'echo "from my script"'
+sh 'echo "Hello from my script"'
