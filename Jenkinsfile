@@ -1,6 +1,12 @@
 
 pipeline {
- agent any 
+ agent {
+    node {
+        label any
+        customWorkspace 'mytemp-workspace'
+    }
+}
+
  
  options {
   timeout(time: 2, unit: 'HOURS')
