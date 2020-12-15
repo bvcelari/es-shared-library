@@ -1,1 +1,4 @@
-println "Hello World!!"
+def call(String mydata) {
+  println "Hello World!!"
+  println $mydata
+}
