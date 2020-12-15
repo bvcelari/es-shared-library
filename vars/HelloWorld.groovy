@@ -1,4 +1,4 @@
 def call(String mydata) {
   println "Hello World!!"
-  println $mydata
+  println ${mydata}
 }
