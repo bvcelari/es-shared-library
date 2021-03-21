@@ -12,13 +12,14 @@ pipeline {
  }
 
  parameters {
-  string(name: 'credentialId', defaultValue: 'SPFCDND')
-  string(name: 'DeployUrl', defaultValue: 'https://supportforce--spfcdnd.cs63.my.salesforce.com')
+  string(name: 'param1', defaultValue: 'SPFCDND')
+/*  string(name: 'DeployUrl', defaultValue: 'https://supportforce--spfcdnd.cs63.my.salesforce.com')
   booleanParam(name: 'runA', defaultValue: true)
   booleanParam(name: 'runB', defaultValue: true)
   booleanParam(name: 'Deploy', defaultValue: false)
   booleanParam(name: 'Stash', defaultValue: false)
   booleanParam(name: 'Deestroy', defaultValue: false) //paramenter to run aXe testing with in kumonium
+  */
  }
 
  stages {
@@ -33,9 +34,9 @@ pipeline {
     steps { 
                 //withSonarQubeEnv('BMS SonarQube') { 
                     sh ' echo "hello World"'
-                    sh 'echo $CHANGE_ID'
-                    sh "echo \$CHANGE_ID"
-                    sh "echo ${env.CHANGE_ID}"
+                    sh 'echo $param1'
+                    sh "echo \$param1"
+                    sh "echo ${env.param1}"
     }//steps
     }//stage
  } //stages
